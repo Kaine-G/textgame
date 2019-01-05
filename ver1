@@ -1,0 +1,78 @@
+import time
+import random
+import sys
+
+def displayIntro():
+
+    for c in "Welcome to 'NO WORKING TITLE'\n":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.045)
+    print
+    time.sleep(1)
+    
+    for c in "A Murder Mystery game in which you play as Hunter Dubois, a young investigative journalist following the story of Aiysha Ellis, a woman killed several months ago in her apartment.\n":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.045)
+    print
+    time.sleep(1)
+    
+    for c in "Several suspects were called in but nobody has been charged.\n":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.045)
+    print
+    time.sleep(1)
+    
+    for c in "Louis Hanson, your friend in the police department, still believes that one of suspects is guilty but the police chief isn’t allowing further work into the case.\n":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.045)
+    print
+    time.sleep(1)
+    
+    for c in "He asks you to look into the case for him and tells you he’ll give you information about the case as soon as possible.\n":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.045)
+    print
+    time.sleep(1)
+    
+    for c in "That's all you need to get started, good luck Hunter! \n":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.045)
+    print
+    time.sleep(1)
+
+def IntroMorning():
+
+    for c in "Welcome to 'NO WORKING TITLE'\n":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.045)
+    print
+    time.sleep(1)
+
+def morning1():
+    action = ""
+    while action != "1" and action != "2":
+        action = input("How will you start your day? Get up and get ready (1) or Stay in an get some more sleep. (2) ")
+        time.sleep(1)
+
+    if action == "1":
+        print("You get up and get dressed")
+        time.sleep(1)
+        print("While doing so, you remember the breakfast meeting you have with Louis about the Aiysha Ellis case")
+        time.sleep(1)
+        print("You rush out the door, but are able to head to the meeting on time")
+
+    return action
+    
+
+
+
+
+displayIntro()
+morning1()
